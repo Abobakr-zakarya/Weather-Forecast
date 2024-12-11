@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    li
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="weather-app">
+            <h1 class="text-center mb-4">Weather Forecast</h1>
+            
+            <div class="search-box mb-4">
+                <input type="text" class="form-control" id="cityInput" placeholder="Enter city name">
+                <button class="btn btn-primary mt-2" onclick="getWeather()">Search</button>
+            </div>
+
+            <div class="weather-info" id="weatherInfo">
+                <div class="city-info text-center">
+                    <h2 id="cityName">--</h2>
+                    <div class="temperature">
+                        <span id="temp">--</span>°C
+                    </div>
+                    <div class="weather-description" id="weatherDesc">--</div>
+                    <div class="weather-details mt-3">
+                        <div class="humidity">Humidity: <span id="humidity">--</span>%</div>
+                        <div class="wind">Wind Speed: <span id="windSpeed">--</span> km/h</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast" id="forecast">
+                <h3 class="text-center mt-4">5-Day Forecast</h3>
+                <div id="forecastContainer">
+                    <!-- Forecast items will be dynamically added here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+</html>
